@@ -1,0 +1,48 @@
+body {
+  background: lightgrey;
+}
+
+div.container {
+  background: palegoldenrod;
+  display: grid;
+  grid-template-columns: 1fr 2fr 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+  padding: 20px;
+  grid-template-areas: 
+      "header header right-bar"
+      ". content right-bar"
+      ". content right-bar"
+}
+
+div.item {
+  background: pink;
+  border: 1px solid tomato;
+  padding: 20px;
+  text-align: center; 
+}
+
+div.header {
+  grid-area: header;
+}
+
+div.sidebar {
+  grid-area: sidebar;
+}
+
+div.content {
+  grid-area: content;
+
+}
+
+div.footer {
+  grid-area: footer;
+}
+
+div.footer-side {
+  grid-area: footer-side;
+}
+
+div.right-bar {
+  grid-area: right-bar;
+}
